@@ -1,19 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<title>Xeno Invasion HTML5</title>
-		<meta charset="utf8"/>
-		<link rel="stylesheet" type="text/css" href="main.css"/>
-		<script src="Stats.js"></script>
-		<script src="main.js"></script>
-		<script src="Waves.js"></script>
-		<script src="Entity.js"></script>
-		<script src="Explosion.js"></script>
-		<script src="Bullet.js"></script>
-		<script src="Creeper.js"></script>
-	</head>
-	<body onload="world.init('game-container')">
-		<div id="game-container">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Xenoinvasion-html5 by sebastianrosik</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+	<script src="Stats.js"></script>
+	<script src="main.js"></script>
+	<script src="Waves.js"></script>
+	<script src="Entity.js"></script>
+	<script src="Explosion.js"></script>
+	<script src="Bullet.js"></script>
+	<script src="Creeper.js"></script>
+
+  </head>
+  <body onload="world.init('game-container')">
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/sebastianrosik/xenoinvasion-html5">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/sebastianrosik/xenoinvasion-html5/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/sebastianrosik/xenoinvasion-html5/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Xenoinvasion-html5</h1>
+        </div>
+
+        <div id="game-container">
 			<div id="screen-preloader">
 				<div id="preloader"><div></div></div>
 			</div>
@@ -43,5 +73,10 @@
 				<h3>paused</h3>
 			</div>
 		</div>
-	</body>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
 </html>

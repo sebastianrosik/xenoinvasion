@@ -1,8 +1,3 @@
-html, body {
-	margin  : 0;
-	padding : 0;
-	background : #000;
-}
 
 @-webkit-keyframes flicker{
 	0%   { opacity: 0.5 }
@@ -226,20 +221,16 @@ html, body {
 }
 
 #game-container {
-	position: absolute;
-	left : 50%;
-	top : 50%;
+	position: relative;
 	overflow: hidden;
 	background : url(resources/sky.png) repeat-x;
 	cursor : default;
-		/*-webkit-animation-name: sky;
-	-webkit-animation-duration: 1000s;
-		animation-iteration-count: infinite;*/
-
 	color: white;
 	font-size: 10px;
 	font-family: arial, sans-serif;
 	line-height: 9px;
+
+	margin : 20px 0 0 0 !important;
 }
 
 #game-container.quake #ground {
